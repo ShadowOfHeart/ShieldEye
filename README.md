@@ -1,29 +1,19 @@
-# A simple and efficient Minecraft Anticheat Base!
+ShieldEye
+ShieldEye — это специализированный античит для серверов Minecraft, разработанный с учетом специфики игрового режима в стиле Rust. Он фокусируется на защите от сложных видов читерства, таких как аим-боты и другие инструменты для нечестной стрельбы, которые особенно актуальны для PvP-режимов и открытого мира в стиле Rust. ShieldEye помогает поддерживать честную и реалистичную игровую атмосферу, сохраняя уникальные механики и баланс твоего проекта.
 
-A simple Anticheat Base for the game Minecraft, Made with perfomance in mind
-This base utilizes ProtocolLib, However it's very easy to add your own Packet Listener
-It's highly recommended that you use NMS if you end up using this on a production server
-In order to maximize perfomance gain, Especially in newer versions of minecraft.
+Основные функции
+Выявление аим-ботов и автоприцеливания: ShieldEye оснащен системой анализа поведения игрока, которая выявляет использование автоматического прицеливания, аим-ботов и других инструментов, улучшающих точность стрельбы.
+Баллистика и проверка точности: система учитывает физику пуль и траектории, чтобы предотвращать неестественные действия, такие как мгновенное прицеливание и попадания, противоречащие механике игры.
+Контроль оружия и стрельбы: ShieldEye анализирует поведение игрока при стрельбе, включая параметры скорострельности, время перезарядки и работу с оружием, чтобы не допустить автоматических макросов и других читов, связанных с оружием.
+Минимальная нагрузка на сервер: античит разработан так, чтобы эффективно работать даже на крупных серверах, не снижая производительность и качество игрового процесса.
+Специфика защиты в стиле Rust
+ShieldEye адаптирован для мира, где значительную роль играют PvP-бои и механики выживания. Поэтому он фокусируется на блокировке:
 
-### Features
+Аим-ботов и автоприцеливания — защита от читов, которые дают игрокам нечестное преимущество в стрельбе.
+Неестественной скорострельности — контроль использования макросов и других способов искусственного ускорения.
+Обходов баллистики — блокировка методов, которые игнорируют законы физики пуль.
+Гибкость и настройка
+ShieldEye поддерживает гибкие параметры, чтобы администраторы могли настраивать уровень чувствительности и пороги срабатывания для каждого типа подозрительных действий. Это позволяет настраивать античит в зависимости от особенностей геймплея и игровых режимов, обеспечивая высокую точность детектирования.
 
-* Multithreaded design scaling by your server's hardware.
-* Lots of useful Utility classes and methods, Made with perfomance in mind (Including a BetterStream library and FastMath)
-* Chat packet based alerts with hoverable messages
-* High perfomance Check Manager system
-* Easy to use PlayerLog system (SQL implementation can be added easily)
-* Easy to use Theme system (With multiple themes)
-* Easy to use Configuration system (Value caching)
-* Easy to use Command system
-* Easy to use NMS system
-* Per player checks, Making check creation much easier
-* Many check testing tools, Making check development much easier
-* Made to support all versions of Minecraft
-* High perfomance packet wrapping system with caching
-* High perfomance in general
-* Access to the player's client version
-* Access to the player's client brand
-* Zero usage of unnecessary method calls - api usage for the sake of it looking *pretty*
-
-## License
-None, Feel free to use anything you may find useful.
+Поддержка
+ShieldEye оптимизирован для Minecraft-серверов в стиле Rust и предназначен для версии 1.16.5
